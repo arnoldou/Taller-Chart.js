@@ -36,45 +36,14 @@
     </nav>
     <div class="container">        
         <h1 class="mt-4">Taller Chart.js en Nodeschool San Miguel</h1>
-        <div style="width: 70%;height: 80%"><canvas id="lienzo"></canvas></div>        
-    </div>
-
-    <script>
-        let context = document.getElementById('lienzo').getContext('2d');
-        let miGrafica = new Chart(context, {
-            type: 'line', // horizontaBar, pie, line, doughnut, radar, polarArea
-            data:{
-                labels:['Nodejs', 'Koa', 'Nextjs', 'Meteor', 'Sails', 'FeathersJs'],
-                datasets:[{
-                    data: [12764, 1701, 1491, 922, 335, 317],
-                    borderColor: 'purple',
-                    label:'Javascript Frameworks 2018',
-                    fill: false
-                },{
-                    data: [14541, 2198, 30, 1625, 630, 447],
-                    borderColor: '#2e99b0',
-                    label:'Javascript Frameworks 2017',
-                    fill: false
-                }]
-            },
-            options: {
-                responsive:true,
-                title:{
-                    position: 'top', // bottom, right, left
-                    display: true,
-                    text:'Gráfico de Linea - Que Framework Backend Usas.',
-                    fontSize: 25
-                },
-                legend:{
-                    display: true,
-                    position: 'right'
-                }
-            }
-        });
-    
-    </script>
-
-
+        <div class="card text-white bg-primary mt-5">
+            <div class="card-body">
+                <h3>Visualización de Datos con Chart.js</h3>                
+                <p> En este taller crearemos 3 gráficas (barras, pastel y lineas) usando la libreria Javascript Chart.js</p>
+            </div>
+        </div>
+        <div class="text-center"><img src="./img/chartjs.jpg" alt="chart.js"></div>
+    </div>    
     
 </body>
 </html>
